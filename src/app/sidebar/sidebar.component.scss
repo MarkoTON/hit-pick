@@ -1,0 +1,15 @@
+/* sidebar.component.scss */
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 250px;
+}
+
+@media (min-width: 768px) {
+  .sidenav {
+    display: none;
+  }
+}
