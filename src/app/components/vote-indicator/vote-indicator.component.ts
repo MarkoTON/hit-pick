@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-vote-indicator',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './vote-indicator.component.scss'
 })
 export class VoteIndicatorComponent {
-
+  @Input() vote!: number | null;
 }
