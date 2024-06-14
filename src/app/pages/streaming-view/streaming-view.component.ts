@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { SongInfoBlockComponent } from '../../components/song-info-block/song-info-block.component';
+import { NextHitComponent } from '../../components/next-hit/next-hit.component';
+import { AdBlockComponent } from '../../components/ad-block/ad-block.component';
 
 @Component({
   selector: 'app-streaming-view',
   standalone: true,
-  imports: [],
+  imports: [SongInfoBlockComponent, NextHitComponent, AdBlockComponent],
   templateUrl: './streaming-view.component.html',
   styleUrl: './streaming-view.component.scss'
 })
