@@ -3,7 +3,7 @@ import { RadioStationsComponent } from './pages/radio-stations/radio-stations.co
 import { BestOfDayComponent } from './pages/best-of-day/best-of-day.component';
 import { BestOfMonthComponent } from './pages/best-of-month/best-of-month.component';
 import { MyListComponent } from './pages/my-list/my-list.component';
-import { UserComponent } from './components/user/user.component';
+import { UserComponent } from './pages/user/user.component';
 import { StreamingViewComponent } from './pages/streaming-view/streaming-view.component';
 
 export const routes: Routes = [
