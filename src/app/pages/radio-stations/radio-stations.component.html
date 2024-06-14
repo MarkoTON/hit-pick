@@ -1,16 +1,7 @@
 <!-- Ovde je prikaz svih radio stanica ili ti zanrova. Dodje mu kao home page.  -->
 <mat-grid-list cols="2" rowHeight="2:1">
-  <mat-grid-tile>'60</mat-grid-tile>
-  <mat-grid-tile>'70</mat-grid-tile>
-  <mat-grid-tile>'80</mat-grid-tile>
-  <mat-grid-tile>'90</mat-grid-tile>
-  <mat-grid-tile>'00</mat-grid-tile>
-  <mat-grid-tile>'10</mat-grid-tile>
-  <mat-grid-tile>Rock</mat-grid-tile>
-  <mat-grid-tile>Pop</mat-grid-tile>
-  <mat-grid-tile>Metal</mat-grid-tile>
-  <mat-grid-tile>R & B</mat-grid-tile>
-  <mat-grid-tile>Rap</mat-grid-tile>
-  <mat-grid-tile>Hip Hop</mat-grid-tile>
+  @for (station of stations; track station){
+    <a [routerLink]="['/streaming-view', station.id]"><mat-grid-tile>{{station.name}}</mat-grid-tile></a>
+  }
 </mat-grid-list>
 <app-quick-menu></app-quick-menu>
