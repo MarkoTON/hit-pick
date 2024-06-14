@@ -7,7 +7,7 @@ import { RouterLink, RouterModule } from '@angular/router';
 @Component({
   selector: 'app-radio-stations',
   standalone: true,
-  imports: [MatGridListModule, QuickMenuComponent, MatToolbarModule, RouterLink, RouterModule],
+  imports: [MatGridListModule, MatToolbarModule, RouterLink, RouterModule],
   templateUrl: './radio-stations.component.html',
   styleUrl: './radio-stations.component.scss'
 })
